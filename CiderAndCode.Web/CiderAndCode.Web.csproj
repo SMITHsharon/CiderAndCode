@@ -159,6 +159,7 @@
     <Compile Include="Controllers\CiderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PickApplesController.cs" />
+    <Compile Include="Controllers\StealApplesController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DataModels\AppDbContext.cs" />
     <Compile Include="DataModels\AppleFact.cs" />
@@ -196,7 +197,9 @@
     <Content Include="app\app.js" />
     <Content Include="app\appconfig.js" />
     <Content Include="app\controllers\PickApples\pickApplesController.js" />
+    <Content Include="app\controllers\StealApples\stealApplesController.js" />
     <Content Include="app\views\PickApples\pickApples.html" />
+    <Content Include="app\views\StealApples\stealApples.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -278,7 +281,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60209</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

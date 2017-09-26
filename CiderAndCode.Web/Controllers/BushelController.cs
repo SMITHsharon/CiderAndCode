@@ -20,7 +20,7 @@ namespace CiderAndCode.Web.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, bushels);
         }
 
-        [HttpDelete, Route("{id}")]
+        [HttpDelete, Route("delete/{id}")]
         public HttpResponseMessage StealApples(int id)
         {
             var db = new AppDbContext();

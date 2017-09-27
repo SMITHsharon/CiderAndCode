@@ -1,7 +1,6 @@
 ﻿app.config(["$routeProvider",function($routeProvider) {
     $routeProvider
-        .when
-        ("/pickapples",
+        .when("/pickapples",
         {
             templateUrl: "/app/views/PickApples/pickApples.html",
             controller: "pickApplesController"
@@ -10,5 +9,10 @@
         {
             templateUrl: "/app/views/StealApples/stealApples.html",
             controller: "stealApplesController"
+        })
+        .when("/makecider",
+        {
+            templateUrl: "/app/views/MakeCider/makeCider.html",
+            controller: "makeCiderController"
         });
 }]);

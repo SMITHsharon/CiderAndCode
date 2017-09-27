@@ -21,7 +21,8 @@ namespace CiderAndCode.Web.Controllers
                     ContributingUser = bushel.User.Name,
                     NumberOfBushels = bushel.Quantity,
                     TypeOfApple = bushel.Type.ToString(),
-                    Id = bushel.Id
+                    Id = bushel.Id,
+                    Pressed = bushel.Pressed
                 });
 
             return Request.CreateResponse(HttpStatusCode.OK, bushels);

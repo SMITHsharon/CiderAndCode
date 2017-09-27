@@ -158,6 +158,7 @@
     <Compile Include="Controllers\BushelController.cs" />
     <Compile Include="Controllers\CiderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MakeCiderController.cs" />
     <Compile Include="Controllers\PickApplesController.cs" />
     <Compile Include="Controllers\StealApplesController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -196,8 +197,10 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\appconfig.js" />
+    <Content Include="app\controllers\MakeCider\makeCiderController.js" />
     <Content Include="app\controllers\PickApples\pickApplesController.js" />
     <Content Include="app\controllers\StealApples\stealApplesController.js" />
+    <Content Include="app\views\MakeCider\makeCider.html" />
     <Content Include="app\views\PickApples\pickApples.html" />
     <Content Include="app\views\StealApples\stealApples.html" />
     <Content Include="Content\bootstrap.css" />
@@ -239,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\MakeCider\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

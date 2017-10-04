@@ -28,6 +28,7 @@ namespace CiderAndCode.Web.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, bushels);
         }
 
+
         [HttpDelete, Route("delete/{id}")]
         public HttpResponseMessage StealApples(int id)
         {
@@ -38,6 +39,7 @@ namespace CiderAndCode.Web.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK);
         }
+
 
         [HttpGet, Route("user/{userId}")]
         public HttpResponseMessage GetBushelsByUser(int userId)

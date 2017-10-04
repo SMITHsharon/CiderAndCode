@@ -10,8 +10,9 @@ console.log("making cider");
             $scope.bushels = result.data;
         });
 
-    $scope.makeCider = function (mealId) {
-        $http.update(`/api/Bushels/cider/${mealId}`)
+    $scope.makeCider = function (bushelId) {
+        //$http.post(`/api/cider/${bushelId}`)
+        $http.post(`/api/cider`)
             .then((result) => {
                 console.log(result);
                 // rewriting screen not working?

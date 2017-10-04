@@ -8,8 +8,8 @@
             $scope.bushels = result.data;
         });
 
-    $scope.stealApples = function (mealId) {
-        $http.delete(`/api/Bushels/delete/${mealId}`)
+    $scope.stealApples = function (bushelId) {
+        $http.delete(`/api/Bushels/delete/${bushelId}`)
             .then((result) => {
 console.log(result);
                 // rewriting screen not working?

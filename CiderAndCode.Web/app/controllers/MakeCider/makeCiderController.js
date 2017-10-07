@@ -11,12 +11,9 @@ console.log("making cider");
         });
 
     $scope.makeCider = function (bushelId) {
-        //$http.post(`/api/cider/${bushelId}`)
-        $http.post(`/api/cider`)
+        $http.post(`/api/cider/${bushelId}`, { BushelId: bushelId })
             .then((result) => {
-                console.log(result);
-                // rewriting screen not working?
-                $location.url('/makecider');
+                $route.reload();
             })
             .catch(error => console.log(error)
             );

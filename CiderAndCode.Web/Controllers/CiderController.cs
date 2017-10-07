@@ -11,7 +11,7 @@ namespace CiderAndCode.Web.Controllers
     [RoutePrefix("api/cider")]
     public class CiderController : ApiController
     {
-        [Route(""), HttpPost]
+        [Route("{BushelId}"), HttpPost]
         public HttpResponseMessage MakeCider(MakeCiderRequest makeCiderRequest)
         {
             var db = new AppDbContext();
@@ -46,8 +46,7 @@ namespace CiderAndCode.Web.Controllers
             }
             catch (Exception ex)
             {
-                //log.error(ex);
-                Request.CreateErrorResponse(HttpStatusCode.InternalServerError,
+                 Request.CreateErrorResponse(HttpStatusCode.InternalServerError,
                     "Couldn't make cider today, Machine is down for repairs.");
             }
 

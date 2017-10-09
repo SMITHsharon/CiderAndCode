@@ -1,7 +1,5 @@
 ﻿app.controller("makeCiderController", ["$http", "$location", "$scope", function ($http, $location, $scope) {
 
-console.log("making cider");
-
     $scope.bushels = [];
 
     $http.get("/api/Bushels")
@@ -11,9 +9,10 @@ console.log("making cider");
         });
 
     $scope.makeCider = function (bushelId) {
-        $http.post(`/api/cider/${bushelId}`, { BushelId: bushelId })
+        $http.post(`/api/Ciders/${bushelId}`, { BushelId: bushelId })
             .then((result) => {
-                $route.reload();
+                //$route.reload();
+                $location.url('/listcider');
             })
             .catch(error => console.log(error)
             );

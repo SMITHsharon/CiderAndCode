@@ -27,25 +27,6 @@ namespace CiderAndCode.Web.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK, bushels);
         }
-        
-
-        [HttpGet, Route("ciders")]
-        public HttpResponseMessage GetAllCiders()
-        {
-            var db = new AppDbContext();
-
-            var ciders = db.Ciders
-                .Select(cider => new CiderResult
-                {
-                    //ContributingUser = bushel.User.Name,
-                    //NumberOfBushels = bushel.Quantity,
-                    //TypeOfApple = bushel.Type.ToString(),
-                    //Id = bushel.Id,
-                    //Pressed = bushel.Pressed
-                });
-
-            return Request.CreateResponse(HttpStatusCode.OK, ciders);
-        }
 
 
         [HttpDelete, Route("delete/{id}")]

@@ -1,10 +1,21 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+﻿<h2>Apple Ciders</h2>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Cider ID</th>
+            <th>Type</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="appleCiders" ng-repeat="cider in ciders">
+            <td>{{cider.Id}}</td>
+            <td>{{cider.TypeOfApple}}</td>
+            <td>{{cider.NumberOfGallons}}</td>
+            <td>{{cider.DatePressed}}</td>
+            <td><button class="btn-primary btn-xs" ng-click="pressMore()">Press More</button></td>
+            <td><button class="btn-primary btn-xs" ng-click="pickApples()">Pick Apples</button></td>
+            </select>
+        </tr>
+    </tbody>
+</table>

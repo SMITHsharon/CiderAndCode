@@ -15,9 +15,9 @@
             templateUrl: "/app/views/MakeCider/makeCider.html",
             controller: "makeCiderController"
         })
-        .when("listcider",
+        .when("/listcider",
         {
             templateUrl: "/app/views/ListCider/listCider.html",
-            controller: "listCiderController"
+            controller: "listCidersController"
         });
 }]);

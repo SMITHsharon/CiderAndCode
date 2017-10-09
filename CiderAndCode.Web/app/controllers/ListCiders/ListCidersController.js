@@ -1,4 +1,4 @@
-﻿app.controller("listCiderController", ["$http", "$location", "$scope", function ($http, $location, $scope) {
+﻿app.controller("listCidersController", ["$http", "$location", "$scope", function ($http, $location, $scope) {
 
     console.log("listing cider");
 
@@ -7,7 +7,7 @@
     $http.get("/api/Ciders")
         .then(function (result) {
             console.log("result.data :: ", result.data);
-            $scope.bushels = result.data;
+            $scope.ciders = result.data;
         });
 
 }]);
